@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:backgroundTint="@color/grey">
+
+    <ImageView
+        android:id="@+id/R_img_1"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/R_img_1"
+        android:padding="30dp"
+        android:id="@+id/ly_1">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Enter Your Full Name"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:paddingleft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_fullname"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Enter Your Email"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:paddingleft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_email"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Create Password"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:paddingleft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_password"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Confirm Your Password"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="10dp"
+            android:paddingleft="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@+id/ly_1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/secondaryColor"
+        android:width="300dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:id="@+id/R_btn_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/R_btn_1"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/primaryColor"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
