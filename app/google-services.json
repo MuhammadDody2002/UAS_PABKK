@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "771407440684",
+    "project_id": "kamikaze-6df9a",
+    "storage_bucket": "kamikaze-6df9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771407440684:android:270fc7d7be735d4ef55a89",
+        "android_client_info": {
+          "package_name": "com.if5b.komik_kamikaze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771407440684-ubuei2n6bmmf1ssramrg9cg8p14v795t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwUceInHHbpdVSRg7bLT8g5o7NeAXr2vQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771407440684-ubuei2n6bmmf1ssramrg9cg8p14v795t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

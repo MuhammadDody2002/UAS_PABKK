@@ -49,25 +49,26 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="57dp"
-            android:hint="Create Password"
+            android:hint="No Telepon"
             android:background="@drawable/button_shape"
             android:backgroundTint="@color/white"
             android:layout_marginTop="10dp"
-            android:id="@+id/edt_password"/>
+            android:id="@+id/edt_notelp"/>
+
         <EditText
+            android:id="@+id/edt_password"
             android:layout_width="match_parent"
             android:layout_height="57dp"
-            android:hint="Confirm Your Password"
+            android:layout_marginTop="10dp"
             android:background="@drawable/button_shape"
             android:backgroundTint="@color/white"
-            android:layout_marginTop="10dp"
-            />
+            android:hint="Password" />
     </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="REgister"
         android:layout_below="@+id/ly_1"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button_shape"
@@ -90,6 +91,7 @@
             android:layout_height="wrap_content"
             android:text="Already have an account?"/>
         <TextView
+            android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
