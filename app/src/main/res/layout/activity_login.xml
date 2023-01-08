@@ -37,7 +37,6 @@
             android:hint="Enter Your Email"
             android:background="@drawable/button_shape"
             android:backgroundTint="@color/white"
-            android:paddingleft="10dp"
             android:layout_marginTop="10dp"
             android:id="@+id/edt_email"/>
         <EditText
@@ -46,7 +45,6 @@
             android:hint="Password"
             android:background="@drawable/button_shape"
             android:backgroundTint="@color/white"
-            android:paddingleft="10dp"
             android:layout_marginTop="10dp"
             android:id="@+id/edt_password"/>
 
@@ -76,12 +74,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already have an account?"
+            android:text="Not have an account?"
             android:textSize="12sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Register"
             android:textColor="@color/primaryColor"
             android:textSize="12sp"/>
     </LinearLayout>
