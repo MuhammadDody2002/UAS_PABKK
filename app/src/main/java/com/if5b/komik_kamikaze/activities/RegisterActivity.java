@@ -1,4 +1,4 @@
-package com.if5b.komik_kamikaze;
+package com.if5b.komik_kamikaze.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +15,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.if5b.komik_kamikaze.activities.LoginActivity;
+import com.if5b.komik_kamikaze.R;
 import com.if5b.komik_kamikaze.databinding.ActivityRegisterBinding;
 
 import java.util.HashMap;

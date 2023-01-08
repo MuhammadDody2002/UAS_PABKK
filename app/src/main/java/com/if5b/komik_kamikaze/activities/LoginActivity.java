@@ -14,7 +14,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.if5b.komik_kamikaze.HomeActivity;
 import com.if5b.komik_kamikaze.R;
-import com.if5b.komik_kamikaze.RegisterActivity;
 import com.if5b.komik_kamikaze.databinding.ActivityLoginBinding;
 
 import io.github.muddz.styleabletoast.StyleableToast;
