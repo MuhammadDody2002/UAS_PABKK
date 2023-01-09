@@ -18,8 +18,14 @@
         <activity
             android:name=".DetailActivity"
             android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:exported="false">
 
         </activity>
+
         <activity
             android:name=".activities.LoginActivity"
             android:exported="false">

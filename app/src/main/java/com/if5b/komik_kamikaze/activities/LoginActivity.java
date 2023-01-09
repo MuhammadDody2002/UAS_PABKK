@@ -19,9 +19,7 @@ import com.if5b.komik_kamikaze.databinding.ActivityLoginBinding;
 import io.github.muddz.styleabletoast.StyleableToast;
 
 public class LoginActivity extends AppCompatActivity {
-
     private ActivityLoginBinding binding;
-
     FirebaseAuth mAuth;
 
     @Override
