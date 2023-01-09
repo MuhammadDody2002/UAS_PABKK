@@ -40,7 +40,8 @@
                 android:background="@drawable/button_shape"
                 android:backgroundTint="@color/white"
                 android:layout_marginTop="10dp"
-                android:id="@+id/edt_fullname"/>
+                android:id="@+id/edt_fullname"
+                android:maxLines="1"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -53,7 +54,8 @@
                 android:background="@drawable/button_shape"
                 android:backgroundTint="@color/white"
                 android:layout_marginTop="10dp"
-                android:id="@+id/edt_email"/>
+                android:id="@+id/edt_email"
+                android:maxLines="1"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -66,7 +68,8 @@
                 android:background="@drawable/button_shape"
                 android:backgroundTint="@color/white"
                 android:layout_marginTop="10dp"
-                android:id="@+id/edt_notelp"/>
+                android:id="@+id/edt_notelp"
+                android:maxLines="1"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -79,7 +82,8 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_shape"
                 android:backgroundTint="@color/white"
-                android:hint="Password"/>
+                android:hint="Password"
+                android:maxLines="1"/>
         </com.google.android.material.textfield.TextInputLayout>
 
 

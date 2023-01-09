@@ -15,14 +15,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class komikadapter extends  RecyclerView.Adapter<komikadapter.ViewHolder> {
-        private List<komikmodel.Result> results = new ArrayList<>();
-        private OnAdapterListener listener;
-        public komikadapter(List<komikmodel.Result> results, OnAdapterListener listener) {
-            this.results = results;
-            this.listener = listener;
+        private List<Result> results = new ArrayList<>();
+        private ItemClickListener<Result> itemClickListener;
+        public komikadapter(ItemClickListener<Result> itemClickListener) {
+            this.itemClickListener =itemClickListener;
+
         }
 
-        public void setData(List<komikmodel.Result> data) {
+        public void setData(List<Result> data) {
             results.clear();
             results.addAll(data);
             notifyDataSetChanged();
@@ -38,13 +38,19 @@ public class komikadapter extends  RecyclerView.Adapter<komikadapter.ViewHolder>
 
         @Override
         public void onBindViewHolder(@NonNull komikadapter.ViewHolder holder, int position) {
-            komikmodel.Result result = results.get(position);
+            Result result = results.get(position);
             holder.nm_komik.setText(result.getNm_komik());
             holder.genre.setText(result.getGenre());
             Glide.with(holder.itemView.getContext())
                     .load(result.getGbr_komik())
                     .fitCenter()
                     .into(holder.gbr_komik);
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    itemClickListener.onClick(result);
+                }
+            });
         }
 
         @Override
@@ -66,6 +72,6 @@ public class komikadapter extends  RecyclerView.Adapter<komikadapter.ViewHolder>
         }
 
         public interface OnAdapterListener {
-            void onClick(komikmodel.Result result);
+            void onClick(Result result);
         }
 }
