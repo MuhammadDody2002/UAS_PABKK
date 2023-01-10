@@ -7,6 +7,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.if5b.komik_kamikaze.activities.ProfileActivity;
 import com.if5b.komik_kamikaze.databinding.ActivityHomeBinding;
 import com.if5b.komik_kamikaze.retrofit.APIservice;
@@ -31,6 +34,16 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         setupRecyclerViewKomik();
         getDataFromAPI();
+
+        ImageSlider imageSlider = findViewById(R.id.iklan);
+        ArrayList<SlideModel> slideModels = new ArrayList<>();
+
+        slideModels.add(new SlideModel(R.drawable.logo, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.air, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.marvel, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.logo, ScaleTypes.FIT));
+
+        imageSlider.setImageList(slideModels, ScaleTypes.FIT);
 
         binding.navigasi.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){

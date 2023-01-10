@@ -101,12 +101,16 @@
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="10dp">
 
-                        <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="130dp"
-                            android:adjustViewBounds="true"
-                            android:cropToPadding="true"
-                            android:src="@drawable/marvel" />
+                        <com.denzcoskun.imageslider.ImageSlider
+                            android:id="@+id/iklan"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:iss_period="1000"
+                            app:iss_auto_cycle="true"
+                            app:iss_delay="1000"
+                            app:iss_corner_radius="20"
+                            app:iss_title_background="@color/white"
+                            tools:ignore="MissingClass" />
                     </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
@@ -115,29 +119,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Coming Soon :Avenger"
-                        android:textSize="18dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Universe yang diciptakan oleh Doctor Doom membuat
-                tergabungnya universe 161 dan 180"
-                        android:textSize="15dp"
-                        android:textStyle="italic" />
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/secondaryColor"
-                        android:text="Baca Komik"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -311,7 +292,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Trending Hari Ini"
+                        android:text=" Hari Ini"
                         android:textColor="@color/white"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -337,50 +318,12 @@
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rv_komik"
+                            android:layout_marginLeft="100dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             tools:itemCount="2"
                             tools:listitem="@layout/item_komik" />
-                        <!--    Card Komik-->
-                        <!--                        <LinearLayout-->
-                        <!--                            android:foreground="?android:attr/selectableItemBackground"-->
-                        <!--                            android:background="@drawable/card_trending"-->
-                        <!--                            android:orientation="vertical"-->
-                        <!--                            android:layout_width="140dp"-->
-                        <!--                            android:layout_height="wrap_content">-->
-                        <!--                            <LinearLayout-->
-                        <!--                                android:layout_width="match_parent"-->
-                        <!--                                android:layout_height="wrap_content">-->
-                        <!--                                <androidx.cardview.widget.CardView-->
-                        <!--                                    app:cardCornerRadius="5dp"-->
-                        <!--                                    android:layout_width="match_parent"-->
-                        <!--                                    android:layout_height="wrap_content">-->
-                        <!--                                    <ImageView-->
-                        <!--                                        android:cropToPadding="false"-->
-                        <!--                                        android:adjustViewBounds="true"-->
-                        <!--                                        android:src="@drawable/marvel"-->
-                        <!--                                        android:layout_width="match_parent"-->
-                        <!--                                        android:layout_height="wrap_content">-->
-                        <!--                                    </ImageView>-->
-                        <!--                                </androidx.cardview.widget.CardView>-->
-                        <!--                            </LinearLayout>-->
-                        <!--                            <LinearLayout-->
-                        <!--                                android:layout_marginTop="5dp"-->
-                        <!--                                android:orientation="vertical"-->
-                        <!--                                android:layout_width="match_parent"-->
-                        <!--                                android:layout_height="wrap_content">-->
-                        <!--                                <TextView-->
-                        <!--                                    android:text="Marvel Secret Wars"-->
-                        <!--                                    android:layout_width="match_parent"-->
-                        <!--                                    android:layout_height="wrap_content"/>-->
-                        <!--                                <TextView-->
-                        <!--                                    android:text="icmb : 9/10"-->
-                        <!--                                    android:textStyle="bold"-->
-                        <!--                                    android:layout_width="match_parent"-->
-                        <!--                                    android:layout_height="wrap_content"/>-->
-                        <!--                            </LinearLayout>-->
 
-                        <!--                        </LinearLayout>-->
                         <RelativeLayout
                             android:layout_width="10dp"
                             android:layout_height="match_parent" />

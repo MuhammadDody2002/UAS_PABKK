@@ -38,32 +38,31 @@ public class ProfileActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
-//        userID = mAuth.getCurrentUser().getUid();
+        userID = mAuth.getCurrentUser().getUid();
 
-//        DocumentReference documentReference = fStore.collection("Users").document(userID);
-//        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
-//            @Override
-//            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
-//                username.setText(documentSnapshot.getString("username"));
-//                notelephone.setText(documentSnapshot.getString("notelephone"));
-//                email.setText(documentSnapshot.getString("email"));
-//            }
-//        });
-//        btnLogOut.setOnClickListener(view ->{
-//            mAuth.signOut();
-//            startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
-//        });
-//
-//    }
+        DocumentReference documentReference = fStore.collection("Users").document(userID);
+        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
+                username.setText(documentSnapshot.getString("username"));
+                notelephone.setText(documentSnapshot.getString("notelephone"));
+                email.setText(documentSnapshot.getString("email"));
+            }
+        });
+        btnLogOut.setOnClickListener(view ->{
+            mAuth.signOut();
+            startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
+        });
 
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//        FirebaseUser user = mAuth.getCurrentUser();
-//        if (user == null){
-//            startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
-//            StyleableToast.makeText(this, "Logout Berhasil", R.style.kamikazetoast).show();
-//        }
-//    }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = mAuth.getCurrentUser();
+        if (user == null){
+            startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
+            StyleableToast.makeText(this, "Logout Berhasil", R.style.kamikazetoast).show();
+        }
     }
 }
